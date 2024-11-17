@@ -13,18 +13,22 @@ function Home() {
           <div className='advising'>
             <h1>Schedule an Advising Appointment</h1>
             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsum doloribus odio, quae deserunt excepturi numquam eveniet, ipsa dolor nesciunt repudiandae dicta ipsam rem inventore nam. Perspiciatis illo eligendi veritatis?</h3>
-            <button className='advisingbutton'> Get Started! </button>
+            <a className='advisingbutton' href='https://docs.google.com/forms/d/e/1FAIpQLSdZIfpzywOTAct0mvtb3BnEbF6F5Ir0KdN4_aypxOAmlmHnBg/viewform?usp=sf_link' > Get Started! </a>
           </div>
         </div>
+        <div className='loanok'>
         <div className='loan'>
           <h1>Need a loan but don't have enough credit?</h1>
-          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsum doloribus odio, quae deserunt excepturi numquam eveniet, ipsa dolor nesciunt repudiandae dicta ipsam rem inventore nam. Perspiciatis illo eligendi veritatis?</h3>
-          <button className='advisingbutton'> Get Started </button>
+          <h3> Get personalized investment strategies tailored to your goals and risk tolerance.</h3>
+          <a className='loanbutton' href='https://www.marcus.com/us/en/resources/lending'> Get Started </a>
         </div>
+        </div>
+        <div className='investmentok'>
         <div className='investment'>
           <h1>Investment Strategy Advising with AI ChatBot</h1>
           <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsum doloribus odio, quae deserunt excepturi numquam eveniet, ipsa dolor nesciunt repudiandae dicta ipsam rem inventore nam. Perspiciatis illo eligendi veritatis?</h3>
           <button className='advisingbutton'> Get Started </button>
+        </div>
         </div>
       </div>
     );
