@@ -1,134 +1,22 @@
-*{
-  margin: auto;
-  font-family: 'Times New Roman', Times, serif;
-  text-decoration: none;
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-header{
-  background-color: rgb(0, 0, 0);
+.main-content {
+  flex: 1;
+  padding-top: 64px; /* Adjust this value based on your header height */
 }
 
-body{
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   background-color: rgb(232, 240, 247);
-}
-
-nav{
-  padding: 4%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgb(155, 222, 250);
-}
-
-
-a{
-  font-weight: 500;
-  font-size: 20px;
-  color: rgb(172, 144, 64);
-  transition: 400ms;
-}
-
-a:hover{
-  color: rgb(199, 220, 235);
-  font-size: 22px;
-}
-
-
-.title{
-  color: rgb(172, 144, 64);
-  padding-top: 9%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 50px;
-}
-
-h2{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.utdtitle{
-  color: rgb(66, 134, 84);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 50px;
-  padding-bottom: 10%;
-}
-
-
-.advising{
-  border-radius: 10px;
-  background-color: rgb(140, 205, 221);
-  padding: 10%;
-}
-
-h3{
-  padding-top: 3%;
-  padding-bottom: 3%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.loan{
-  border-top: 5px solid;
-  border-color: black;
-  background-color: rgb(140, 205, 221);
-  padding: 10%;
-}
-
-.investment{
-  border-top: 5px solid;
-  border-color: black;
-  background-color: rgb(140, 205, 221);
-  padding: 10%;
-}
-
-button{
-  padding: 2%;
-  font-size: 20px;
-  border-radius: 900px;
-  border: none;
-  background-image: linear-gradient(to bottom right, rgb(244, 233, 200), rgb(235, 212, 144), rgb(188, 152, 45), rgb(154, 115, 0));
-}
-
-.homepageheader {
-  background-color: black;
-  padding: 1rem;
-}
-
-.homepagenavheader {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.homepagenavheader a {
-  color: gold;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-.middlearea {
-  text-align: center;
-  margin: 2rem 0;
-}
-
-.ok, .loan, .investment {
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 800px;
-}
-
-.advisingbutton {
-  /* Add button styles */
-  padding: 0.5rem 1rem;
-  background-color: gold;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
 }
