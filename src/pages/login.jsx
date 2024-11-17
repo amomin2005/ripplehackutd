@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Login.css'; // You'd need to create this CSS file
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -27,52 +28,48 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen bg-amber-500 flex items-center justify-center p-6">
-      <div className="w-full max-w-md bg-black p-8 rounded-lg shadow-lg">
-        <h1 className="text-2xl font-bold mb-6 text-white text-center">Login</h1>
+    <div className="login-container">
+      <h1 className="login-title">Login</h1>
 
-        {error && (
-          <div className="bg-red-900 border border-red-400 text-red-200 px-4 py-3 rounded mb-4">
-            {error}
-          </div>
-        )}
+      {error && (
+        <div className="error-message">
+          {error}
+        </div>
+      )}
 
-        <form onSubmit={handleLogin} className="space-y-6">
-          <div>
-            <label className="block text-sm font-medium text-white mb-2">
-              Username
-            </label>
-            <input
-              type="text"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-              className="w-full p-3 bg-gray-900 text-white border border-gray-700 rounded-md focus:ring-2 focus:ring-amber-500 focus:outline-none"
-              placeholder="Enter username"
-            />
-          </div>
+      <form onSubmit={handleLogin} className="login-form">
+        <div className="form-group">
+          <label className="form-label">
+            Username
+          </label>
+          <input
+            type="text"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            className="form-input"
+          />
+        </div>
 
-          <div>
-            <label className="block text-sm font-medium text-white mb-2">
-              Password
-            </label>
-            <input
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className="w-full p-3 bg-gray-900 text-white border border-gray-700 rounded-md focus:ring-2 focus:ring-amber-500 focus:outline-none"
-              placeholder="Enter password"
-            />
-          </div>
+        <div className="form-group">
+          <label className="form-label">
+            Password
+          </label>
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            className="form-input"
+          />
+        </div>
 
-          <button
-            type="submit"
-            disabled={loading}
-            className="w-full py-3 px-4 bg-amber-500 text-black rounded-md hover:bg-amber-600 disabled:opacity-50 disabled:cursor-not-allowed font-medium"
-          >
-            {loading ? 'Logging in...' : 'Login'}
-          </button>
-        </form>
-      </div>
+        <button
+          type="submit"
+          disabled={loading}
+          className={`submit-button ${loading ? 'loading' : ''}`}
+        >
+          {loading ? 'Logging in...' : 'Login'}
+        </button>
+      </form>
     </div>
   );
 };
