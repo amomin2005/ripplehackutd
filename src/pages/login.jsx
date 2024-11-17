@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Login.css'; // You'd need to create this CSS file
+import './Login.css';
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -28,48 +28,50 @@ const Login = () => {
   };
 
   return (
-    <div className="login-container">
-      <h1 className="login-title">Login</h1>
+    <div className="login-page">
+      <div className="login-container">
+        <h1 className="login-title">Login</h1>
 
-      {error && (
-        <div className="error-message">
-          {error}
-        </div>
-      )}
+        {error && (
+          <div className="error-message">
+            {error}
+          </div>
+        )}
 
-      <form onSubmit={handleLogin} className="login-form">
-        <div className="form-group">
-          <label className="form-label">
-            Username
-          </label>
-          <input
-            type="text"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            className="form-input"
-          />
-        </div>
+        <form onSubmit={handleLogin} className="login-form">
+          <div className="form-group">
+            <label className="form-label">
+              Username
+            </label>
+            <input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              className="form-input"
+            />
+          </div>
 
-        <div className="form-group">
-          <label className="form-label">
-            Password
-          </label>
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            className="form-input"
-          />
-        </div>
+          <div className="form-group">
+            <label className="form-label">
+              Password
+            </label>
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="form-input"
+            />
+          </div>
 
-        <button
-          type="submit"
-          disabled={loading}
-          className={`submit-button ${loading ? 'loading' : ''}`}
-        >
-          {loading ? 'Logging in...' : 'Login'}
-        </button>
-      </form>
+          <button
+            type="submit"
+            disabled={loading}
+            className={`submit-button ${loading ? 'loading' : ''}`}
+          >
+            {loading ? 'Logging in...' : 'Login'}
+          </button>
+        </form>
+      </div>
     </div>
   );
 };
