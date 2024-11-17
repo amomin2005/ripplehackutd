@@ -55,6 +55,7 @@ const FinancialServices = () => {
               Learn More
             </Link>
           </div>
+
           {/* Retirement Planning Card */}
           <div className="bg-white rounded-lg shadow-lg p-6">
             <h2 className="text-xl font-semibold mb-4 text-blue-600">Retirement Planning</h2>
@@ -92,17 +93,3 @@ const FinancialServices = () => {
 };
 
 export default FinancialServices;
-
-
-// import React from 'react';
-
-// function FinancialServices() {
-//   return (
-//     <div>
-//       <h1>Financial Services</h1>
-//       {/* Add your financial services content here */}
-//     </div>
-//   );
-// }
-
-// export default FinancialServices;
