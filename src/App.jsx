@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Login from './components/Login';
-import SignUp from './components/SignUp';
+import Header from "./components/headers";
+import Login from './components/login';
+import SignUp from './components/signup';
 import './App.css';
 
 const App = () => {
@@ -21,4 +21,4 @@ const App = () => {
     </Router>
   );
 };
-export default App
+export default App;
