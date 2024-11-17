@@ -87,3 +87,21 @@
     opacity: 0.5;
     cursor: not-allowed;
   }
+
+  .toggle-form {
+    margin-top: 1.5rem;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.875rem;
+  }
+  
+  .toggle-link {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 0.25rem;
+  }
+  
+  .toggle-link:hover {
+    text-decoration: underline;
+  }

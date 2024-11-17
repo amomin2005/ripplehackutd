@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './SignUp.css';
 
 const SignUp = () => {
@@ -24,7 +25,6 @@ const SignUp = () => {
     setError('');
     setLoading(true);
 
-    // Basic validation
     if (!formData.username || !formData.email || !formData.password || !formData.confirmPassword) {
       setError('All fields are required');
       setLoading(false);
@@ -38,10 +38,8 @@ const SignUp = () => {
     }
 
     try {
-      // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 1000));
       console.log('Sign up successful');
-      // Here you would typically make an API call to register the user
     } catch (err) {
       setError('Registration failed');
     } finally {
@@ -121,6 +119,13 @@ const SignUp = () => {
             {loading ? 'Creating Account...' : 'Sign Up'}
           </button>
         </form>
+
+        <div className="toggle-form">
+          Already have an account?{' '}
+          <Link to="/login" className="toggle-link">
+            Login here
+          </Link>
+        </div>
       </div>
     </div>
   );

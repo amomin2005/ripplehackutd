@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Login.css';
 
 const Login = () => {
@@ -71,6 +72,13 @@ const Login = () => {
             {loading ? 'Logging in...' : 'Login'}
           </button>
         </form>
+
+        <div className="toggle-form">
+          Don't have an account?{' '}
+          <Link to="/signup" className="toggle-link">
+            Sign up here
+          </Link>
+        </div>
       </div>
     </div>
   );
