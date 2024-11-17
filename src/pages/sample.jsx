@@ -25,7 +25,7 @@ const Sample = () => {
             <a className='advisingbutton' href='https://www.marcus.com/us/en/resources/retirement' > Learn More! </a>
             <h2 className="text-xl font-semibold mb-4 text-blue-600">Tax Planning</h2>
             <p className="text-gray-600 mb-4">
-            Plan for a secure retirement with our comprehensive retirement planning services.
+            Optimize your tax strategy with expert guidance and planning services.
             </p>
             <a className='advisingbutton' href='https://www.goldmansachs.com/careers/our-firm/tax' > Learn More! </a>
         </div>
